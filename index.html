@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>山河无恙，人间皆安</title>
+    <meta name="keywords" content="山河无恙，人间皆安">
+    <meta name="description" content="山河无恙，人间皆安">
+    <meta name="baidu-site-verification" content="code-vIivd4QsAU">
+    <link rel="shortcut icon" href="./ico.ico">
+    <link rel='stylesheet' id='iconfont-css' href='static/css/iconfont.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='bootstrap-css' href='static/css/bootstrap.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='style-css' href='static/css/style.min.css' type='text/css' media='all'>
+    <script src='static/js/jquery.min.js' id='jquery-js'></script>
+</head>
+<body class="user-bookmark-body bookmark-default">
+
+<div class="page-container">
+    <div class="bookmark-bg">
+        <div class="img-bg" id="img-bg"></div>
+        <div class="gradient-linear"></div>
+    </div>
+    <header class="navbar navbar-dark fixed-top">
+        <div class="weather">
+            <div id="he-plugin-simple" style="display: contents;"></div>
+            <script>
+                WIDGET = {
+                    "CONFIG": {
+                        "modules": "02",
+                        "background": "5",
+                        "tmpColor": "FFFFFF",
+                        "tmpSize": "20",
+                        "cityColor": "FFFFFF",
+                        "citySize": "16",
+                        "aqiColor": "FFFFFF",
+                        "aqiSize": "16",
+                        "weatherIconSize": "30",
+                        "alertIconSize": "18",
+                        "padding": "0px 5px 0px 5px",
+                        "shadow": "0",
+                        "language": "auto",
+                        "fixed": "false",
+                        "vertical": "top",
+                        "horizontal": "left",
+                        "key": "257fe54e3a0b4cd29b399d2831bd56e0"
+                    }
+                }
+            </script>
+            <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0" defer=""></script>
+        </div>
+    </header>
+    <div class="header-big mb-4">
+        <div class="s-search">
+            <div id="search" class="s-search mx-auto">
+                <div class="big-title text-center mb-3 mb-md-5 mt-2">
+                    <p class="h1" style="letter-spacing: 6px;">山河无恙</p>
+                </div>
+                <div id="search-list-menu" class="hide-type-list">
+                    <div class="s-type text-center overflow-x-auto">
+                        <div class="s-type-list big">
+                            <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
+                            <label for="type-baidu1" class="active" data-id="group-b"><span>搜索</span></label>
+                        </div>
+                    </div>
+                </div>
+                <form action="/search.html?key=" method="get" target="_blank" class="super-search-fm">
+                    <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
+                    <button type="submit"><i class="iconfont icon-search"></i></button>
+                </form>
+                <div id="search-list" class="hide-type-list">
+                    <div class="search-group group-b s-current">
+                        <ul class="search-type">
+                            <li><input checked="checked" hidden="" type="radio" name="type" id="type-baidu1" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu1"><span class="text-muted">百度</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌两下"><label for="type-google1"><span class="text-muted">谷歌</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索"><label for="type-sogo"><span class="text-muted">搜狗</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="必应搜索"><label for="type-bing1"><span class="text-muted">必应</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-kuake" value="https://quark.sm.cn/s?q=" data-placeholder="夸克搜索"><label for="type-kuake"><span class="text-muted">夸克</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-toutiao" value="https://so.toutiao.com/search/?keyword=" data-placeholder="头条搜索"><label for="type-toutiao"><span class="text-muted">头条</span></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card search-smart-tips" style="display: none">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="quick-sites position-relative">
+        <div class="container text-center px-5">
+            <div class="row"> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://github.com/" title="Github" rel=" noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/github.png"
+                                data-src="./ico/github.png" onerror="javascript:this.src='./ico/github.png'"
+                                alt="Github"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Github</span>
+                    </div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank" href="https://mail.google.com/"
+                    title="Gitee" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/gmail.png"
+                                data-src="./ico/gmail.png" onerror="javascript:this.src='./ico/gmail.png'" alt="gmail">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Gmail</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.youtube.com/" title="YouTube" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/youtube.png"
+                                data-src="./ico/youtube.png" onerror="javascript:this.src='./ico/youtube.png'" alt="YouTube"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>YouTube</span>
+                    </div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://mail.163.com/" title="网易邮箱" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/163mail.png"
+                                data-src="./ico/163mail.png" onerror="javascript:this.src='./ico/163mail.png'" alt="网易邮箱"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>网易邮箱</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank" href="https://pan.baidu.com/"
+                    title="百度网盘" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/baidupan.png"
+                                data-src="./ico/baidupan.png" onerror="javascript:this.src='./ico/baidupan.png'" alt="百度网盘">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>百度网盘</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://douyin.com/" title="抖音" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/douyin.png"
+                                data-src="./ico/douyin.png" onerror="javascript:this.src='./ico/douyin.png'" alt="抖音">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>抖音</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://mail.qq.com/"
+                    title="QQ邮箱" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/QQyx.png"
+                                data-src="./ico/QQyx.png" onerror="javascript:this.src='./ico/QQyx.png'" alt="QQ邮箱">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>QQ邮箱</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://zhihu.com/" title="知乎"
+                    rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/zhihu.png"
+                                data-src="./ico/zhihu.png" onerror="javascript:this.src='./ico/zhihu.png'" alt="知乎">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>知乎</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.bilibili.com/" title="哔哩哔哩" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/bilibili.png"
+                                data-src="./ico/bilibili.png" onerror="javascript:this.src='./ico/bilibili.png'"
+                                alt="哔哩哔哩"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>哔哩哔哩</span></div>
+
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.jianshu.com/" title="简书" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/jianshu.png"
+                                data-src="./ico/jianshu.png" onerror="javascript:this.src='./ico/jianshu.png'"
+                                alt="简书"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>简书</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://tieba.baidu.com/" title="百度贴吧" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/tieba.png"
+                                data-src="./ico/tieba.png" onerror="javascript:this.src='./ico/tieba.png'"
+                                alt="百度贴吧"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>百度贴吧</span></div>
+                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://weibo.com/" title="微博" rel="external nofollow noopener">
+                    <div class="d-flex mb-2">
+                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="./ico/weibo.png"
+                                data-src="./ico/weibo.png" onerror="javascript:this.src='./ico/weibo.png'" alt="微博">
+                        </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>微博</span></div>
+                </a> </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="main-footer footer-type-1 position-relative text-xs">
+        <div id="footer-tools" class="d-flex flex-column">
+            <div id="footer-tools" class="d-flex flex-column"> <a href="javascript:" id="go-to-up"
+                class="btn rounded-circle go-up m-1" rel="go-top" style="display: none;" one-link-mark="yes"> <i
+                    class="iconfont icon-to-up"></i> </a> </div>
+        </div>
+        <div class="footer-inner text-center text-light my-3" style="color: #f8f9fa45!important;">
+                <div class="footer-text">
+                    Copyright © 2022 山河无恙，人间皆安
+                </div>
+            </div>
+    </footer>
+</div>
+<script src="static/js/bing.js"></script>
+<script src="static/js/popper.min.js"></script>
+<script src='static/js/bootstrap.min.js' id='bootstrap-js'></script>
+<script src="static/js/theia-sticky-sidebar.js"></script>
+<script src='static/js/lazyload.min.js' id='lazyload-js'></script>
+<script src='static/js/app.min.js' id='appjs-js'></script>
+
+</body>
+</html>
